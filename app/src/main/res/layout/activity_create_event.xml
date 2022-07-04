@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/event"
+        tools:context=".activities.CreateEventActivity"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/rounded_corners_info3">
+
+
+            <ProgressBar
+                android:id="@+id/create_PGB_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/white"
+                android:translationZ="150dp"
+                android:visibility="gone"/>
+
+
+            <EditText
+                android:id="@+id/create_EDTXT_eventName"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corners_info5"
+                android:gravity="center_horizontal"
+                android:hint="Event Name"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                android:paddingStart="8dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="@color/pink_orenge"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="@color/pink_orenge"
+                android:textSize="12pt"
+                android:textStyle="bold"
+                app:layout_constraintVertical_chainStyle="spread" />
+
+
+            <EditText
+                android:id="@+id/create_EDTXT_eventDesc"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:autofillHints="invited friends"
+                android:background="@drawable/rounded_corners_info5"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:hint="Event description"
+                android:iconifiedByDefault="false"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textColorHighlight="@color/pink_orenge"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="@color/pink_orenge"
+                android:textSize="7pt"
+                app:iconifiedByDefault="false"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/create_CDV_locationSearch"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="12dp"
+                android:layout_height="50dp">
+
+
+                <fragment android:id="@+id/create_FRG_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/create_MAP_mapView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                tools:context=".map.MapsActivity" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/create_TXTV_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_info5"
+                    android:text="20:20"
+                    android:layout_marginEnd="22dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/pink"
+                    android:textColorHint="@color/gray_dark_dark"
+                    android:textColorLink="@color/pink"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/create_TXTV_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_info5"
+                    android:text="10/10/20"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/pink"
+                    android:textColorHint="@color/gray_dark_dark"
+                    android:textColorLink="@color/pink"
+                    android:textSize="8pt"/>
+
+
+            </LinearLayout>
+
+            <TimePicker
+                android:id="@+id/create_timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:visibility="gone"/>
+
+            <DatePicker
+                android:id="@+id/create_datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/create_BTN_createEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corners_butten3"
+                android:paddingHorizontal="16dp"
+                android:text="Create Event"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="70dp"
+                android:textSize="7pt"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

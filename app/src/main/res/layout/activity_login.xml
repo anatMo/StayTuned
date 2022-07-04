@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome1" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/logo"-->
+    <!--        android:layout_width="170dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:src="@drawable/logo_donde_2"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/register_TXT_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="monospace"
+            android:text="Hey You,"
+            android:textColor="#4AB5BF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login_TXT_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="78dp"
+            android:text="   Long Time No Tuned..."
+            android:textColor="#EA3451"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/rounded_corners_info2">
+
+
+
+                <EditText
+                    android:id="@+id/login_EDTXT_email"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_info"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/pink_orenge"
+                    android:textColorHint="#3747DA"
+                    android:textColorLink="@color/pink_orenge"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#BFCCE6E6"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/login_EDTXT_password"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="58dp"
+                        android:background="@drawable/rounded_corners_info"
+                        android:backgroundTint="#BFCCE6E6"
+                        android:gravity="center"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/pink_orenge"
+                        android:textColorHint="#3747DA"
+                        android:textColorLink="@color/pink_orenge"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/register_IMG_showHidePassword"
+                        android:layout_width="28dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_alignEnd="@+id/login_EDTXT_password"
+                        android:layout_alignTop="@+id/login_EDTXT_password"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/ic_eye_visibility_off_24"
+                        android:drawableTint="@color/gray_dark_dark"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/login_BTN_login"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded_corners_butten"
+                    android:text="  LOGIN  "
+                    android:textColor="@color/white"
+                    android:textSize="18dp"/>
+
+
+                <TextView
+                    android:id="@+id/login_BTN_register"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_corners_butten"
+                    android:text="Click here to register"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/pink_orenge"
+                    android:textSize="18dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

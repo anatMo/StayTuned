@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">StayTuned</string>
+    <string name="no_users_found">No users found!</string>
+    <string name="login">Login</string>
+    <string name="enter_username">enter username</string>
+    <string name="click_here_tio_register">Click here to register</string>
+    <string name="write_a_message">Type a message</string>
+    <string name="click_here_to_login">Click here to login</string>
+    <string name="enter_password">enter_password</string>
+    <string name="register">Register</string>
+    <string name="no_events_found">no events found!</string>
+    <string name="add_event">add event</string>
+    <!--    <string name="default_web_client_id" translatable="false">142291395026-hi7avmeru1tr24uf5ja7gmmmvvm0n4bv.apps.googleusercontent.com</string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="arg_event_id">eventID</string>
+    <string name="arg_event_name">eventName</string>
+    <string name="arg_position">arg_position</string>
+    <string name="arg_event_model">arg_event_model</string>
+    <string name="arg_offline_manager">arg_offline_manager</string>
+
+
+    <!--    Users collection-->
+    <string name="ff_Users">Users</string>
+    <string name="ff_Users_userName">userName </string>
+    <string name="ff_Users_userID">userID </string>
+    <string name="ff_Users_userEmail">userEmail </string>
+    <string name="ff_Users_userProfilePicURL">userProfilePicURL </string>
+    <string name="ff_Users_userLastLocation">userLastLocation</string>
+    <string name="ff_Users_userInvitedEventIDs">userInvitedEventIDs </string>
+    <string name="ff_Users_userInteractedUserEmails">userInteractedUserEmails</string>
+    <string name="ff_Users_InvitedInUserEvents">InvitedInUserEvents </string>
+    <!--    InvitedInUserEvents subcollection-->
+    <string name="ff_InvitedInUserEvents">InvitedInUserEvents</string>
+    <string name="ff_InvitedInUserEvents_invitedInUserEventID">invitedInUserEventID</string>
+    <string name="ff_InvitedInUserEvents_invitedInUserEventName">invitedInUserEventName</string>
+    <string name="ff_InvitedInUserEvents_invitedInUserEventLocationName">invitedInUserEventLocationName</string>
+    <string name="ff_InvitedInUserEvents_invitedInUserEventCreatorName">invitedInUserEventCreatorName</string>
+    <string name="ff_InvitedInUserEvents_invitedInUserEventIsGoing">invitedInUserEventIsGoing</string>
+    <string name="ff_InvitedInUserEvents_invitedInUserEventTimeStarting">invitedInUserEventTimeStarting</string>
+
+    <!--    Events collection-->
+    <string name="ff_Events">Events</string>
+    <string name="ff_Events_eventName">eventName </string>
+    <string name="ff_Events_eventDescription">eventDescription </string>
+    <string name="ff_Events_eventCreatorUID">eventCreatorUID </string>
+    <string name="ff_Events_eventCreatorName">eventCreatorName </string>
+    <string name="ff_Events_eventTimeCreated">eventTimeCreated </string>
+    <string name="ff_Events_eventTimeStarting">eventTimeStarting </string>
+    <string name="ff_Events_eventLocationName">eventLocationName </string>
+    <string name="ff_Events_eventLocation">eventLocation </string>
+    <string name="ff_Events_eventInvitedUserIDs">eventInvitedUserIDs</string>
+    <string name="ff_Events_InvitedInEventUsers">InvitedInEventUsers </string>
+    <!--InvitedInEventUsers subcollection-->
+    <string name="ff_InvitedInEventUsers">InvitedInEventUsers</string>
+    <string name="ff_InvitedInEventUsers_invitedInEventUserID">invitedInEventUserID</string>
+    <string name="ff_InvitedInEventUsers_invitedInEventUserStatus">invitedInEventUserStatus</string>
+    <string name="ff_InvitedInEventUsers_invitedInEventUserLastLocation">invitedInEventUserLastLocation</string>
+    <string name="ff_InvitedInEventUsers_invitedInEventUserProfilePicURL">invitedInEventUserProfilePicURL</string>
+    <string name="ff_InvitedInEventUsers_invitedInEventUserName">invitedInEventUserName</string>
+    <string name="ff_InvitedInEventUsers_invitedInEventUserIsGoing">invitedInEventUserIsGoing</string>
+    <string name="arg_invitedInEventUserModels_intent">arg_invitedInEventUserModels_intent</string>
+    <string name="arg_users_bitmaps_intent">arg_users_bitmaps_intent</string>
+    <string name="arg_did_come_from_register_intent">arg_did_come_from_register_intent</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="filterTitle">Tune \ \ \n \ \ \ \  \ \ \ \ \ \ \ Me To...</string>
+
+</resources>

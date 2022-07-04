@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760954481831",
+    "project_id": "staytuned-2022-and",
+    "storage_bucket": "staytuned-2022-and.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760954481831:android:35ba74677bed29e36a3f82",
+        "android_client_info": {
+          "package_name": "com.And_2022.stayTuned"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760954481831-c6n0tra40ipjnf0hq5eajt4361nffhtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1JtQll0-c8x1Wf1TvRsF0aSRme7nm9BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760954481831-c6n0tra40ipjnf0hq5eajt4361nffhtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

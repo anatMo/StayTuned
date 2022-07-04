@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="24dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/singleEvent_TXT_eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/event_item_info_constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="My Event" />
+
+
+
+
+            <TextView
+                android:id="@+id/singleEvent_TXT_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toTopOf="@id/singleEvent_TXT_location"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Description"
+                app:drawableLeftCompat="@drawable/ic_outline_edit_24" />
+
+            <TextView
+                android:id="@+id/singleEvent_TXT_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toTopOf="@+id/singleEvent_TXT_createdBy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleEvent_TXT_description"
+                tools:text="Location"
+                app:drawableLeftCompat="@drawable/ic_outline_location_on_24" />
+
+            <TextView
+                android:id="@+id/singleEvent_TXT_createdBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toTopOf="@+id/singleEvent_TXT_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleEvent_TXT_location"
+                tools:text="Created by"
+                app:drawableLeftCompat="@drawable/ic_baseline_person_24" />
+
+            <TextView
+                android:id="@+id/singleEvent_TXT_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toTopOf="@id/singleEvent_TXT_areYouGoing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singleEvent_TXT_createdBy"
+                tools:text="Starting at"
+                app:drawableLeftCompat="@drawable/ic_outline_timer_24" />
+
+
+            <TextView
+                android:id="@+id/singleEvent_TXT_areYouGoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="20dp"
+                android:text="Are you going?"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toTopOf="@id/singleEvent_BTN_goToEvent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/singleEvent_TXT_date" />
+
+
+            <Button
+                android:id="@+id/singleEvent_BTN_goToEvent"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_butten_gray"
+                android:text="GO TO EVENT"
+                android:textColor="@color/gray_dark_dark"
+                android:textSize="7pt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
