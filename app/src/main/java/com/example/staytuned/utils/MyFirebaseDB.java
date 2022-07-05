@@ -112,7 +112,6 @@ public class MyFirebaseDB {
                         for(DataSnapshot ds : snapshot.getChildren()) {
                             EventModel event = ds.getValue(EventModel.class);
                             events.add(event);
-                            Toast.makeText(context, "getAllEvents", Toast.LENGTH_SHORT).show();
                         }
                         callback_getEvents.eventsReturned(events);
                     }

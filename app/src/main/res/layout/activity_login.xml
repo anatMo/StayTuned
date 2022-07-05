@@ -27,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_corners_info3">
 
         <TextView
             android:id="@+id/register_TXT_title"
@@ -106,11 +107,11 @@
                         android:id="@+id/register_IMG_showHidePassword"
                         android:layout_width="28dp"
                         android:layout_height="24dp"
-                        android:layout_marginEnd="18dp"
-                        android:layout_alignEnd="@+id/login_EDTXT_password"
                         android:layout_alignTop="@+id/login_EDTXT_password"
+                        android:layout_alignEnd="@+id/login_EDTXT_password"
                         android:layout_centerInParent="true"
                         android:layout_marginTop="15dp"
+                        android:layout_marginEnd="18dp"
                         android:background="@drawable/ic_eye_visibility_off_24"
                         android:drawableTint="@color/gray_dark_dark"
                         android:gravity="center"

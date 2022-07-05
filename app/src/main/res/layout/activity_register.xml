@@ -7,132 +7,139 @@
     android:layout_height="match_parent"
     tools:context=".activities.RegisterActivity"
     android:background="@drawable/bg_gradient">
+
     <ImageView
-        android:id="@+id/register_ICN_logo"
-        android:layout_width="170dp"
-        android:layout_height="100dp"
-        android:src="@drawable/logo1"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/register" />
 
-    <TextView
-        android:id="@+id/register_TXT_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="monospace"
-        android:text="Register"
-        android:textColor="@color/pink"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/register_ICN_logo"
-        app:layout_constraintBottom_toTopOf="@id/register_editText_name"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
+        <ImageView
+            android:id="@+id/register_ICN_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
 
-    <EditText
-        android:id="@+id/register_editText_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="name"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textColorHint="@color/gray_light"
-        android:textColorLink="@color/pink_orenge"
-        android:textSize="8pt"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@id/register_EDTXT_email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_TXT_title" />
+            android:background="@drawable/rounded_corners_info"
+            android:src="@drawable/logo1" />
 
-    <EditText
-        android:id="@+id/register_EDTXT_email"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="Email"
-        android:background="@drawable/rounded_corners_info"
-        android:textColorHighlight="@color/pink_orenge"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray_dark_dark"
-        android:textColorLink="@color/pink_orenge"
-        android:inputType="textEmailAddress"
-        android:layout_marginTop="130dp"
-        android:textSize="8pt"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_TXT_title"
-        app:layout_constraintBottom_toTopOf="@id/register_EDTXT_password"/>
+        <TextView
+            android:id="@+id/register_TXT_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:text="Register"
+            android:layout_marginBottom="15dp"
+            android:textColor="#04512E"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
 
-    <Button
-        android:id="@+id/register_IMG_showHidePassword"
-        android:layout_width="25dp"
-        android:layout_height="23dp"
-        android:layout_marginEnd="76dp"
-        android:background="@drawable/ic_eye_visibility_off_24"
-        android:drawableTint="@color/gray_dark_dark"
-        android:gravity="center"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@id/register_BTN_register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/register_EDTXT_email"
-        app:layout_constraintVertical_bias="0.434" />
+<!--        <EditText-->
+<!--            android:id="@+id/register_editText_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="name"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/gray_light"-->
+<!--            android:textColorLink="@color/pink_orenge"-->
+<!--            android:textSize="8pt"-->
+<!--            android:visibility="invisible"/>-->
 
-    <EditText
-        android:id="@+id/register_EDTXT_password"
-        android:layout_width="270dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:inputType="textPassword"
-        android:background="@drawable/rounded_corners_info"
-        android:textColorHighlight="@color/pink_orenge"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray_dark_dark"
-        android:textColorLink="@color/pink"
-        android:textSize="8pt"
-        app:layout_constraintBottom_toTopOf="@id/register_BTN_register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/register_EDTXT_email" />
+        <EditText
+            android:id="@+id/register_EDTXT_email"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Email"
+            android:background="@drawable/rounded_corners_info"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/gray_dark_dark"
+            android:textColorLink="@color/pink_orenge"
+            android:inputType="textEmailAddress"
+            android:textSize="8pt"/>
 
 
-    <Button
-        android:id="@+id/register_BTN_register"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="REGISTER"
-        android:textColor="@color/white"
-        android:background="@drawable/rounded_corners_butten"
-        android:textSize="7pt"
-        android:layout_marginTop="30dp"
-        app:layout_constraintBottom_toTopOf="@id/register_BTN_backToLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/register_EDTXT_password" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
-    <Button
-        android:id="@+id/register_BTN_backToLogin"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corners_butten"
-        android:text="BACK TO LOGIN"
-        android:textColor="@color/white"
-        android:textSize="7pt"
-        android:layout_marginBottom="300dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/register_BTN_register" />
+            <Button
+                android:id="@+id/register_IMG_showHidePassword"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_alignEnd="@+id/register_EDTXT_password"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/ic_eye_visibility_off_24"
+                android:drawableTint="@color/gray_dark_dark"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/register_EDTXT_password"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_info"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/pink_orenge"
+                android:textColorHint="@color/gray_dark_dark"
+                android:textColorLink="@color/pink"
+                android:textSize="8pt" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/register_BTN_register"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corners_butten4"
+            android:textSize="7pt"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/register_BTN_backToLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_butten4"
+            android:text="BACK TO LOGIN"
+            android:textColor="@color/white"
+            android:textSize="7pt"/>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

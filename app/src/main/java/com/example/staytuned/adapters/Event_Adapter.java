@@ -69,18 +69,22 @@ public class Event_Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         holder.singleEvent_TXT_description.setText(event.getEventDescription());
         holder.singleEvent_TXT_createdBy.setText(event.getEventCreatorName());
         holder.singleEvent_TXT_date.setText(event.getEventTimeStarting().toString());
+        holder.singleEvent_TXT_location.setText(event.getEventLocationName());
 
         String uid = MyFireBaseAuthontication.getMe().getFireBaseUser().getUid();
 
         if(event.getUsersAttending() != null){
             if(event.getUsersAttending().containsKey(uid)){
                 holder.singleEvent_BTN_goToEvent.setVisibility(View.GONE);
+                holder.singleEvent_TXT_areYouGoing.setVisibility(View.GONE);
             }else {
                 holder.singleEvent_BTN_goToEvent.setVisibility(View.VISIBLE);
+                holder.singleEvent_TXT_areYouGoing.setVisibility(View.VISIBLE);
 
             }
         }else {
             holder.singleEvent_BTN_goToEvent.setVisibility(View.VISIBLE);
+            holder.singleEvent_TXT_areYouGoing.setVisibility(View.VISIBLE);
         }
 
     }
@@ -103,6 +107,11 @@ public class Event_Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         private TextView singleEvent_TXT_createdBy;
         private TextView singleEvent_TXT_date;
         private Button singleEvent_BTN_goToEvent;
+        private TextView singleEvent_TXT_location;
+        private TextView singleEvent_TXT_areYouGoing;
+
+
+
         public EventHolder(View itemView) {
             super(itemView);
             singleEvent_TXT_eventName = itemView.findViewById(R.id.singleEvent_TXT_eventName);
@@ -110,6 +119,10 @@ public class Event_Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             singleEvent_TXT_createdBy = itemView.findViewById(R.id.singleEvent_TXT_createdBy);
             singleEvent_TXT_date = itemView.findViewById(R.id.singleEvent_TXT_date);
             singleEvent_BTN_goToEvent = itemView.findViewById(R.id.singleEvent_BTN_goToEvent);
+            singleEvent_TXT_location = itemView.findViewById(R.id.singleEvent_TXT_location);
+            singleEvent_TXT_areYouGoing = itemView.findViewById(R.id.singleEvent_TXT_areYouGoing);
+
+
 
             singleEvent_BTN_goToEvent.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -117,6 +130,7 @@ public class Event_Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                     Toast.makeText(context,"GOING",Toast.LENGTH_LONG).show();
                     MyFirebaseDB.getMe().setGoingToEvent(getItem(getAdapterPosition()).getEventID(), MyFireBaseAuthontication.getMe().getFireBaseUser().getUid());
                     singleEvent_BTN_goToEvent.setVisibility(View.GONE);
+                    singleEvent_TXT_areYouGoing.setVisibility(View.GONE);
 
 
                 }
